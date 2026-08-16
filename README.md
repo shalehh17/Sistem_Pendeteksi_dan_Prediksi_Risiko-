@@ -57,7 +57,7 @@ Sistem_Pendeteksi_dan_Prediksi_Risiko-/
 ## 🧠 3. Arsitektur Machine Learning Pipeline
 Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi dataset logistik multi-partner hingga inferensi prediktif:
 
-```text
+
 🔄 Alur Pipeline End-to-End
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                           1. DATA INGESTION & SOURCING                      │
@@ -103,4 +103,3 @@ Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi datas
 │   ├── Dynamic Business Decision Engine (Mitigasi Proaktif)                  │
 │   └── Live-Feed State Management & Auto Dashboard Sync                      │
 └─────────────────────────────────────────────────────────────────────────────┘
-```

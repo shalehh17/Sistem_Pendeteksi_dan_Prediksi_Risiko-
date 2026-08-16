@@ -55,65 +55,15 @@ Sistem_Pendeteksi_dan_Prediksi_Risiko-/
 
 
 
-<br>
+
+
+
+
+
 
 ---
 
-<br>
-
 ## 🧠 3. Arsitektur Machine Learning Pipeline
-
-Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi dataset logistik multi-partner hingga inferensi prediktif:
-
-```text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           1. DATA INGESTION & SOURCING                      │
-│   - Multi-partner Logistics Dataset (Jarak, Berat, Cuaca, Kurir, Durasi)   │
-└──────────────────────────────────────┬──────────────────────────────────────┘
-                                       │
-                                       ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           2. FEATURE ENGINEERING & TRANSFORMATION           │
-│   ├── Numerical Features (Robust / StandardScaler):                         │
-│   │   └── distance_km, package_weight_kg, delivery_time_hours, dll.         │
-│   ├── Categorical Features (One-Hot Encoding):                              │
-│   │   └── delivery_partner, region, weather_condition, vehicle_type,        │
-│   │       package_type, delivery_mode                                       │
-│   └── Serialization: Export pipeline ke models/preprocessor.pkl             │
-└──────────────────────────────────────┬──────────────────────────────────────┘
-                                       │
-                                       ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           3. DEEP LEARNING ARCHITECTURE (MLP)               │
-│   ├── Type: Multilayer Perceptron (MLP) via TensorFlow / Keras              │
-│   ├── Hidden Layers: Dense Layers + ReLU + Batch Normalization              │
-│   ├── Regularization: Dropout Layers (rate: 0.2 - 0.3)                      │
-│   ├── Optimization: Adam Optimizer & Categorical Crossentropy Loss          │
-│   └── Output Layer: Softmax Multi-class Classifier                          │
-│       ├── Delivered (Tepat Waktu)                                           │
-│       ├── Delayed   (Terlambat)                                             │
-│       └── Failed    (Gagal)                                                 │
-└──────────────────────────────────────┬──────────────────────────────────────┘
-                                       │
-                                       ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           4. EVALUATION & ARTIFACT EXPORT                   │
-│   ├── Validation Metrics: Model Accuracy (> 97.7%), Precision, Recall, F1   │
-│   └── Artifact Export: Bobot model diekspor ke models/dl_model.h5           │
-└──────────────────────────────────────┬──────────────────────────────────────┘
-                                       │
-                                       ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           5. REAL-TIME SERVING & MITIGATION ENGINE          │
-│   ├── Form Input Interaktif (app/views/prediction.py)                       │
-│   ├── Threshold Scoring: <40% Optimal | 40-70% Sedang | >70% Risiko Tinggi │
-│   ├── Dynamic Business Decision Engine (Mitigasi Proaktif)                  │
-│   └── Live-Feed State Management & Auto Dashboard Sync                      │
-└─────────────────────────────────────────────────────────────────────────────┘
-
-
-
-# 🧠 3. Arsitektur Machine Learning Pipeline
 Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi dataset logistik multi-partner hingga inferensi prediktif:
 
 🔄 Alur Pipeline End-to-End

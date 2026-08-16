@@ -117,24 +117,20 @@ pip install -r requirements.txt
 Langkah 4: Bangun Artefak Model (Jika Belum Tersedia)
 Jalankan modul preprocessing data dan training model secara modular:
 
-------
+
 
 ## Bash
 # 1. Bangun pipeline preprocessor
 python -m src.preprocessing
 
----
 # 2. Latih model Deep Learning
 python -m src.train
 Langkah 5: Jalankan Aplikasi Streamlit
 
----
 # Bash
 python -m streamlit run app/main.py
 Aplikasi web akan otomatis terbuka di browser Anda pada alamat: http://localhost:8501.
-
-
-
+```
 
 
 ---

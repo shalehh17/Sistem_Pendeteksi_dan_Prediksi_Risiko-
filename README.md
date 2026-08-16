@@ -132,7 +132,8 @@ Langkah 5: Jalankan Aplikasi Streamlit
 # Bash
 python -m streamlit run app/main.py
 Aplikasi web akan otomatis terbuka di browser Anda pada alamat: http://localhost:8501.
-'''
+
+
 
 
 
@@ -150,3 +151,17 @@ Aplikasi web akan otomatis terbuka di browser Anda pada alamat: http://localhost
    * Lihat ringkasan KPI (*Total Paket, Tingkat Keterlambatan, Rata-Rata Biaya, dll.*).
    * Gunakan **Panel Filter Data Interaktif** untuk membandingkan performa vendor logistik di berbagai kondisi rute.
    * Pantau **Live Feed Badge** dan lihat transaksi pengujian terbaru pada tabel pratinjau data di baris paling bawah.
+
+
+
+
+---
+
+## 🛠️ 7. Teknologi & Pustaka yang Digunakan
+
+* **Bahasa Pemrograman**: Python 3.9+
+* **Antarmuka Web**: Streamlit
+* **Machine Learning & Preprocessing**: Scikit-Learn, Joblib
+* **Deep Learning Framework**: TensorFlow / Keras
+* **Manipulasi & Analisis Data**: Pandas, NumPy
+* **Version Control**: Git & GitHub

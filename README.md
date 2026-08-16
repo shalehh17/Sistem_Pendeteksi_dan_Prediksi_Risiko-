@@ -132,13 +132,11 @@ Langkah 5: Jalankan Aplikasi Streamlit
 # Bash
 python -m streamlit run app/main.py
 Aplikasi web akan otomatis terbuka di browser Anda pada alamat: http://localhost:8501.
+'''
+
+
+
 ---
-
-
-
-
-
-
 
 ## 📈 6. Panduan Penggunaan Aplikasi
 

@@ -54,19 +54,18 @@ Sistem_Pendeteksi_dan_Prediksi_Risiko-/
 └── 📄 README.md                           # Dokumentasi komprehensif proyek
 
 ---
----
+
 
 
 ---
 
 ## 🧠 3. Arsitektur Machine Learning Pipeline
 
-
 Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi dataset logistik multi-partner hingga inferensi prediktif:
 
-```text
+### 🔄 Alur Pipeline End-to-End
 
-🔄 Alur Pipeline End-to-End
+```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                           1. DATA INGESTION & SOURCING                      │
 │   - Multi-partner Logistics Dataset (Jarak, Berat, Cuaca, Kurir, Durasi)   │
@@ -111,22 +110,5 @@ Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi datas
 │   ├── Dynamic Business Decision Engine (Mitigasi Proaktif)                  │
 │   └── Live-Feed State Management & Auto Dashboard Sync                      │
 └─────────────────────────────────────────────────────────────────────────────┘
----
 
 
----
-
-### Solusi 2: Memisahkan ke Tabel 2 Kolom Berdampingan (Side-by-Side Table Layout)
-
-Jika yang Anda maksud adalah **meletakkan Bagian 2 di kolom kiri dan Bagian 3 di kolom kanan (layout tabel 2 kolom)**, gunakan format tabel Markdown berikut:
-
-```markdown
----
-
-| 📁 2. Struktur Direktori | 🧠 3. Ringkasan Pipeline Model |
-| :--- | :--- |
-| 
-http://googleusercontent.com/immersive_entry_chip/0
-
-### 💡 Rekomendasi:
-Gunakan **Solusi 1** karena diagram alur (*flowchart ASCII*) membutuhkan ruang horizontal penuh agar teks di dalamnya tetap terbaca jelas, tidak terpotong, dan tidak menghasilkan *horizontal scrollbar*.

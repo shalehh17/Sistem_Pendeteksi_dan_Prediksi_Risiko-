@@ -161,3 +161,12 @@ Aplikasi web akan otomatis terbuka di browser Anda pada alamat: http://localhost
 * **Deep Learning Framework**: TensorFlow / Keras
 * **Manipulasi & Analisis Data**: Pandas, NumPy
 * **Version Control**: Git & GitHub
+
+
+
+---
+
+## 👨‍💻 Kontributor
+
+* **Pengembang**: [shalehh17](https://github.com/shalehh17)
+* **Kontak / Email**: shalehuddinzaki84@gmail.com

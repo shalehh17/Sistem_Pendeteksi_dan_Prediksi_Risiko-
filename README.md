@@ -132,3 +132,27 @@ Langkah 5: Jalankan Aplikasi Streamlit
 # Bash
 python -m streamlit run app/main.py
 Aplikasi web akan otomatis terbuka di browser Anda pada alamat: http://localhost:8501.
+
+
+
+
+
+---
+
+###  📈 6. Panduan Penggunaan Aplikasi
+
+```markdown
+---
+
+## 📈 6. Panduan Penggunaan Aplikasi
+
+1. **Menu: Real-time Prediction**
+   * Masukkan informasi rute (*Jarak, Berat Paket, Estimasi Jam*).
+   * Tentukan mitra ekspedisi, wilayah operasional, kendaraan, serta kondisi cuaca rute.
+   * Klik **"🚀 Eksekusi Analisis Risiko AI"**.
+   * Sistem akan menampilkan persentase risiko delay, progress bar, rekomendasi mitigasi bisnis, dan mencatat transaksi ke dasbor analitik secara live.
+
+2. **Menu: Analytics Dashboard**
+   * Lihat ringkasan KPI (*Total Paket, Tingkat Keterlambatan, Rata-Rata Biaya, dll.*).
+   * Gunakan **Panel Filter Data Interaktif** untuk membandingkan performa vendor logistik di berbagai kondisi rute.
+   * Pantau **Live Feed Badge** dan lihat transaksi pengujian terbaru pada tabel pratinjau data di baris paling bawah.

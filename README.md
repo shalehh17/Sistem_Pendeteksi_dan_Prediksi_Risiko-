@@ -84,3 +84,51 @@ Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi datas
 * 🚦 **Proactive Decision Engine**: Aturan mitigasi bisnis dinamis berbasis threshold risiko (Risiko Tinggi >70%, Sedang 40–70%, Optimal <40%).
 * 📊 **Dynamic Analytics Dashboard**: Visualisasi distribusi historis dengan kemampuan filter interaktif (Mitra, Wilayah, Cuaca).
 * ⚡ **Live-Feed Reactive Data Flow**: Setiap transaksi baru yang dihitung di form prediksi akan otomatis masuk ke memori sesi (`st.session_state`) dan memperbarui KPI serta grafik analitik secara instan.
+
+
+---
+
+## 🚀 5. Langkah-Langkah Menjalankan Proyek (Step-by-Step)
+
+Ikuti langkah-langkah berikut untuk meng-clone, menyiapkan environment, dan menjalankan aplikasi di komputer lokal Anda:
+
+### Langkah 1: Clone Repositori
+Buka terminal Anda dan jalankan perintah berikut:
+```bash
+git clone [https://github.com/shalehh17/Sistem_Pendeteksi_dan_Prediksi_Risiko-.git](https://github.com/shalehh17/Sistem_Pendeteksi_dan_Prediksi_Risiko-.git)
+cd Sistem_Pendeteksi_dan_Prediksi_Risiko-
+
+
+---
+## Langkah 2: Buat Virtual Environment
+
+# Untuk Windows (Command Prompt / PowerShell)
+python -m venv venv
+venv\Scripts\activate
+
+# Untuk macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+
+----
+## Langkah 3: Install Dependensi
+Bash
+pip install -r requirements.txt
+Langkah 4: Bangun Artefak Model (Jika Belum Tersedia)
+Jalankan modul preprocessing data dan training model secara modular:
+
+------
+
+## Bash
+# 1. Bangun pipeline preprocessor
+python -m src.preprocessing
+
+---
+# 2. Latih model Deep Learning
+python -m src.train
+Langkah 5: Jalankan Aplikasi Streamlit
+
+---
+# Bash
+python -m streamlit run app/main.py
+Aplikasi web akan otomatis terbuka di browser Anda pada alamat: http://localhost:8501.

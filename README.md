@@ -49,6 +49,60 @@ Sistem_Pendeteksi_dan_Prediksi_Risiko-/
 ├── models/
 │   ├── preprocessor.pkl           # Artefak pipeline scikit-learn
 │   └── dl_model.h5                # Artefak model Deep Learning TensorFlow
+
+
+
+
+
+
+
+
+### 🧠 Arsitektur Machine Learning Pipeline
+
+1. **Feature Engineering & Transformation:**
+   - **Numerical Features** (*Robust Scaling / Standardization*): `distance_km`, `package_weight_kg`, `delivery_time_hours`, dll.
+   - **Categorical Features** (*One-Hot Encoding*): `delivery_partner`, `region`, `weather_condition`, `vehicle_type`, `package_type`, `delivery_mode`.
+
+2. **Model Architecture:**
+   - **Type:** Deep Neural Network (*Multilayer Perceptron / MLP*).
+   - **Layers:** Dense Layers with ReLU Activation, Batch Normalization, and Dropout layers (0.2–0.3) for regularization.
+   - **Output Layer:** Softmax Multi-class Classifier (`Delivered`, `Delayed`, `Failed`).
+   - **Optimization:** Adam Optimizer, Categorical Crossentropy Loss.
+
+---
+
+## ✨ 3. Fitur Utama
+
+- 🔍 **Real-Time Risk Prediction:** Form interaktif untuk memasukkan parameter operasional dan menghitung probabilitas delay dalam hitungan milidetik.
+- 🚦 **Proactive Decision Engine:** Aturan mitigasi bisnis dinamis berbasis threshold risiko (Risiko Tinggi >70%, Sedang 40-70%, Optimal <40%).
+- 📊 **Dynamic Analytics Dashboard:** Visualisasi distribusi historis dengan kemampuan filter interaktif (Mitra, Wilayah, Cuaca).
+- ⚡ **Live-Feed Reactive Data Flow:** Setiap transaksi baru yang dihitung di form prediksi akan otomatis masuk ke memori sesi (`st.session_state`) dan memperbarui KPI serta grafik analitik secara instan.
+
+---
+
+## 🚀 4. Langkah-Langkah Menjalankan Proyek (Step-by-Step)
+
+Ikuti langkah-langkah berikut untuk meng-clone, menyiapkan environment, dan menjalankan aplikasi di komputer lokal Anda:
+
+### Langkah 1: Clone Repositori
+Buka terminal Anda dan jalankan perintah berikut:
+```bash
+git clone [https://github.com/shalehh17/Sistem_Pendeteksi_dan_Prediksi_Risiko-.git](https://github.com/shalehh17/Sistem_Pendeteksi_dan_Prediksi_Risiko-.git)
+cd Sistem_Pendeteksi_dan_Prediksi_Risiko-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 │
 ├── .gitignore                     # Filter file cache, environment, & binary models
 ├── requirements.txt               # Daftar pustaka dependencies Python

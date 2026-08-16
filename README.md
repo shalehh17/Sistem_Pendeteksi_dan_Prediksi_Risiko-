@@ -59,5 +59,6 @@ Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi datas
 
 
 🔄 Alur Pipeline End-to-End
-![Uploading Christmas Shopping Decision-2026-08-16-100317.png…]()
+
+<img width="1505" height="8192" alt="Christmas Shopping Decision-2026-08-16-100317" src="https://github.com/user-attachments/assets/dcf6ce79-02b5-4ee7-b5a3-d618cfd74bdd" />
 

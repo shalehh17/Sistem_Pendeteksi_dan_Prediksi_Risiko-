@@ -79,7 +79,7 @@ Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi datas
 │   ├── Categorical Features (One-Hot Encoding):                              │
 │   │   └── delivery_partner, region, weather_condition, vehicle_type,        │
 │   │       package_type, delivery_mode                                       │
-│   └── Serialization: Export pipeline ke `models/preprocessor.pkl`           │
+│   └── Serialization: Export pipeline ke models/preprocessor.pkl             │
 └──────────────────────────────────────┬──────────────────────────────────────┘
                                        │
                                        ▼
@@ -99,16 +99,14 @@ Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi datas
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                           4. EVALUATION & ARTIFACT EXPORT                   │
 │   ├── Validation Metrics: Model Accuracy (> 97.7%), Precision, Recall, F1   │
-│   └── Artifact Export: Bobot model diekspor ke `models/dl_model.h5`         │
+│   └── Artifact Export: Bobot model diekspor ke models/dl_model.h5           │
 └──────────────────────────────────────┬──────────────────────────────────────┘
                                        │
                                        ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                           5. REAL-TIME SERVING & MITIGATION ENGINE          │
-│   ├── Form Input Interaktif (`app/views/prediction.py`)                     │
+│   ├── Form Input Interaktif (app/views/prediction.py)                       │
 │   ├── Threshold Scoring: <40% Optimal | 40-70% Sedang | >70% Risiko Tinggi │
 │   ├── Dynamic Business Decision Engine (Mitigasi Proaktif)                  │
 │   └── Live-Feed State Management & Auto Dashboard Sync                      │
 └─────────────────────────────────────────────────────────────────────────────┘
-
-

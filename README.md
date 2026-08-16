@@ -54,7 +54,7 @@ Sistem_Pendeteksi_dan_Prediksi_Risiko-/
 └── 📄 README.md                           # Dokumentasi komprehensif proyek
 
 ---
-
+---
 
 
 ---
@@ -62,8 +62,9 @@ Sistem_Pendeteksi_dan_Prediksi_Risiko-/
 ## 🧠 3. Arsitektur Machine Learning Pipeline
 
 
-```text
 Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi dataset logistik multi-partner hingga inferensi prediktif:
+
+```text
 
 🔄 Alur Pipeline End-to-End
 ┌─────────────────────────────────────────────────────────────────────────────┐

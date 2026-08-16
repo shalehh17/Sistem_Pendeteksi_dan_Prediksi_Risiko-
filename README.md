@@ -19,6 +19,8 @@ Sistem ini menganalisis berbagai variabel fisik dan kontekstual pengiriman (sepe
 
 Selain modul inferensi prediksi, sistem ini dilengkapi dengan **Live-Feed Interactive Analytics Dashboard** yang menghubungkan data historis dan setiap input prediksi baru dari pengguna secara langsung tanpa perlu melakukan proses *retrain* model.
 
+
+
 ---
 
 ## 🏗️ 2. Arsitektur & Struktur Proyek
@@ -52,8 +54,7 @@ Sistem_Pendeteksi_dan_Prediksi_Risiko-/
 
 
 
-
-
+```` ```bash ````
 
 ---
 
@@ -167,6 +168,7 @@ Aplikasi web akan otomatis terbuka di browser Anda pada alamat: `http://localhos
 - **Pengembang:** [shalehh17](https://github.com/shalehh17)
 - **Kontak / Email:** `shalehuddinzaki84@gmail.com`
 
+-```` ``` ```` 
 
 
 

@@ -112,3 +112,21 @@ Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi datas
 │   └── Live-Feed State Management & Auto Dashboard Sync                      │
 └─────────────────────────────────────────────────────────────────────────────┘
 ---
+
+
+---
+
+### Solusi 2: Memisahkan ke Tabel 2 Kolom Berdampingan (Side-by-Side Table Layout)
+
+Jika yang Anda maksud adalah **meletakkan Bagian 2 di kolom kiri dan Bagian 3 di kolom kanan (layout tabel 2 kolom)**, gunakan format tabel Markdown berikut:
+
+```markdown
+---
+
+| 📁 2. Struktur Direktori | 🧠 3. Ringkasan Pipeline Model |
+| :--- | :--- |
+| 
+http://googleusercontent.com/immersive_entry_chip/0
+
+### 💡 Rekomendasi:
+Gunakan **Solusi 1** karena diagram alur (*flowchart ASCII*) membutuhkan ruang horizontal penuh agar teks di dalamnya tetap terbaca jelas, tidak terpotong, dan tidak menghasilkan *horizontal scrollbar*.

@@ -62,3 +62,15 @@ Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi datas
 
 <img width="1505" height="8192" alt="Christmas Shopping Decision-2026-08-16-100317" src="https://github.com/user-attachments/assets/dcf6ce79-02b5-4ee7-b5a3-d618cfd74bdd" />
 
+
+
+### 🔬 Komponen & Spesifikasi Pipeline
+
+* **Feature Engineering & Transformation:**
+  * **Numerical Features (Robust Scaling / Standardization):** `distance_km`, `package_weight_kg`, `delivery_time_hours`, dll.
+  * **Categorical Features (One-Hot Encoding):** `delivery_partner`, `region`, `weather_condition`, `vehicle_type`, `package_type`, `delivery_mode`.
+* **Model Architecture:**
+  * **Type:** Deep Neural Network (*Multilayer Perceptron / MLP*).
+  * **Layers:** Dense Layers dengan ReLU Activation, Batch Normalization, dan Dropout layers (0.2–0.3) untuk regularisasi.
+  * **Output Layer:** Softmax Multi-class Classifier (`Delivered`, `Delayed`, `Failed`).
+  * **Optimization:** Adam Optimizer, Categorical Crossentropy Loss.

@@ -74,3 +74,13 @@ Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi datas
   * **Layers:** Dense Layers dengan ReLU Activation, Batch Normalization, dan Dropout layers (0.2–0.3) untuk regularisasi.
   * **Output Layer:** Softmax Multi-class Classifier (`Delivered`, `Delayed`, `Failed`).
   * **Optimization:** Adam Optimizer, Categorical Crossentropy Loss.
+
+
+---
+
+## ✨ 4. Fitur Utama
+
+* 🔍 **Real-Time Risk Prediction**: Form interaktif untuk memasukkan parameter operasional dan menghitung probabilitas delay dalam hitungan milidetik.
+* 🚦 **Proactive Decision Engine**: Aturan mitigasi bisnis dinamis berbasis threshold risiko (Risiko Tinggi >70%, Sedang 40–70%, Optimal <40%).
+* 📊 **Dynamic Analytics Dashboard**: Visualisasi distribusi historis dengan kemampuan filter interaktif (Mitra, Wilayah, Cuaca).
+* ⚡ **Live-Feed Reactive Data Flow**: Setiap transaksi baru yang dihitung di form prediksi akan otomatis masuk ke memori sesi (`st.session_state`) dan memperbarui KPI serta grafik analitik secara instan.

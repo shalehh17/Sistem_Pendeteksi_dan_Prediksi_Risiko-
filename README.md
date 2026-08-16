@@ -55,10 +55,17 @@ Sistem_Pendeteksi_dan_Prediksi_Risiko-/
 
 
 
-```text
-Sistem_Pendeteksi_dan_Prediksi_Risiko-/
-🧠 3. Arsitektur Machine Learning Pipeline
+<br>
+
+---
+
+<br>
+
+## 🧠 3. Arsitektur Machine Learning Pipeline
+
 Pipeline data dan pemodelan dirancang secara berurutan mulai dari konsumsi dataset logistik multi-partner hingga inferensi prediktif:
+
+```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                           1. DATA INGESTION & SOURCING                      │
 │   - Multi-partner Logistics Dataset (Jarak, Berat, Cuaca, Kurir, Durasi)   │

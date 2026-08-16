@@ -54,9 +54,14 @@ Sistem_Pendeteksi_dan_Prediksi_Risiko-/
 
 
 
-----------------------
 
+---
 
+### 2. Teks Bersih Siap Salin ke `README.md`
+
+Buka file **`README.md`** di VS Code, hapus teks yang menumpuk, lalu salin (*copy*) dan tempel (*paste*) format yang sudah terpisah sempurna di bawah ini:
+
+```markdown
 ### 🧠 Arsitektur Machine Learning Pipeline
 
 1. **Feature Engineering & Transformation:**
@@ -86,24 +91,83 @@ Ikuti langkah-langkah berikut untuk meng-clone, menyiapkan environment, dan menj
 
 ### Langkah 1: Clone Repositori
 Buka terminal Anda dan jalankan perintah berikut:
+
 ```bash
-git clone [https://github.com/shalehh17/Sistem_Pendeteksi_dan_Prediksi_Risiko-.git](https://github.com/shalehh17/Sistem_Pendeteksi_dan_Prediksi_Risiko-.git)
+git clone https://github.com/shalehh17/Sistem_Pendeteksi_dan_Prediksi_Risiko-.git
 cd Sistem_Pendeteksi_dan_Prediksi_Risiko-
+```
+
+### Langkah 2: Buat Virtual Environment (Opsional tapi Disarankan)
+
+```bash
+# Untuk Windows (Command Prompt / PowerShell)
+python -m venv venv
+venv\Scripts\activate
+
+# Untuk macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Langkah 3: Install Dependensi
+
+```bash
+pip install -r requirements.txt
+```
+
+### Langkah 4: Bangun Artefak Model (Jika Belum Tersedia)
+Jalankan modul preprocessing data dan training model secara modular:
+
+```bash
+# 1. Bangun pipeline preprocessor
+python -m src.preprocessing
+
+# 2. Latih model Deep Learning
+python -m src.train
+```
+
+### Langkah 5: Jalankan Aplikasi Streamlit
+
+```bash
+python -m streamlit run app/main.py
+```
+
+Aplikasi web akan otomatis terbuka di browser Anda pada alamat: `http://localhost:8501`.
+
+---
+
+## 📈 5. Panduan Penggunaan Aplikasi
+
+1. **Menu: Real-time Prediction**
+   - Masukkan informasi rute (*Jarak, Berat Paket, Estimasi Jam*).
+   - Tentukan mitra ekspedisi, wilayah operasional, kendaraan, serta kondisi cuaca rute.
+   - Klik **"🚀 Eksekusi Analisis Risiko AI"**.
+   - Sistem akan menampilkan persentase risiko delay, progress bar, rekomendasi mitigasi bisnis, dan mencatat transaksi ke dasbor analitik secara *live*.
+
+2. **Menu: Analytics Dashboard**
+   - Lihat ringkasan KPI (*Total Paket, Tingkat Keterlambatan, Rata-Rata Biaya, dll.*).
+   - Gunakan **Panel Filter Data Interaktif** untuk membandingkan performa vendor logistik di berbagai kondisi rute.
+   - Pantau *Live Feed Badge* dan lihat transaksi pengujian terbaru pada tabel pratinjau data di baris paling bawah.
+
+---
+
+## 🛠️ 6. Teknologi & Pustaka yang Digunakan
+
+- **Bahasa Pemrograman:** Python 3.9+
+- **Antarmuka Web:** Streamlit
+- **Machine Learning & Preprocessing:** Scikit-Learn, Joblib
+- **Deep Learning Framework:** TensorFlow / Keras
+- **Manipulasi & Analisis Data:** Pandas, NumPy
+- **Version Control:** Git & GitHub
+
+---
+
+## 👨‍💻 Kontributor
+
+- **Pengembang:** [shalehh17](https://github.com/shalehh17)
+- **Kontak / Email:** `shalehuddinzaki84@gmail.com`
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-│
-├── .gitignore                     # Filter file cache, environment, & binary models
-├── requirements.txt               # Daftar pustaka dependencies Python
-└── README.md                      # Dokumentasi komprehensif proyek

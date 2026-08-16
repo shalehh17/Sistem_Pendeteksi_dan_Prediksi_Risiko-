@@ -54,53 +54,45 @@ Sistem_Pendeteksi_dan_Prediksi_Risiko-/
 
 
 
-```` ```bash ````
 
----
 
-### 2. Teks Bersih Siap Salin ke `README.md`
+🧠 Arsitektur Machine Learning Pipeline
+Feature Engineering & Transformation:
 
-Buka file **`README.md`** di VS Code, hapus teks yang menumpuk, lalu salin (*copy*) dan tempel (*paste*) format yang sudah terpisah sempurna di bawah ini:
+Numerical Features (Robust Scaling / Standardization): distance_km, package_weight_kg, delivery_time_hours, dll.
 
-```markdown
-### 🧠 Arsitektur Machine Learning Pipeline
+Categorical Features (One-Hot Encoding): delivery_partner, region, weather_condition, vehicle_type, package_type, delivery_mode.
 
-1. **Feature Engineering & Transformation:**
-   - **Numerical Features** (*Robust Scaling / Standardization*): `distance_km`, `package_weight_kg`, `delivery_time_hours`, dll.
-   - **Categorical Features** (*One-Hot Encoding*): `delivery_partner`, `region`, `weather_condition`, `vehicle_type`, `package_type`, `delivery_mode`.
+Model Architecture:
 
-2. **Model Architecture:**
-   - **Type:** Deep Neural Network (*Multilayer Perceptron / MLP*).
-   - **Layers:** Dense Layers with ReLU Activation, Batch Normalization, and Dropout layers (0.2–0.3) for regularization.
-   - **Output Layer:** Softmax Multi-class Classifier (`Delivered`, `Delayed`, `Failed`).
-   - **Optimization:** Adam Optimizer, Categorical Crossentropy Loss.
+Type: Deep Neural Network (Multilayer Perceptron / MLP).
 
----
+Layers: Dense Layers with ReLU Activation, Batch Normalization, and Dropout layers (0.2–0.3) for regularization.
 
-## ✨ 3. Fitur Utama
+Output Layer: Softmax Multi-class Classifier (Delivered, Delayed, Failed).
 
-- 🔍 **Real-Time Risk Prediction:** Form interaktif untuk memasukkan parameter operasional dan menghitung probabilitas delay dalam hitungan milidetik.
-- 🚦 **Proactive Decision Engine:** Aturan mitigasi bisnis dinamis berbasis threshold risiko (Risiko Tinggi >70%, Sedang 40-70%, Optimal <40%).
-- 📊 **Dynamic Analytics Dashboard:** Visualisasi distribusi historis dengan kemampuan filter interaktif (Mitra, Wilayah, Cuaca).
-- ⚡ **Live-Feed Reactive Data Flow:** Setiap transaksi baru yang dihitung di form prediksi akan otomatis masuk ke memori sesi (`st.session_state`) dan memperbarui KPI serta grafik analitik secara instan.
+Optimization: Adam Optimizer, Categorical Crossentropy Loss.
 
----
+✨ 3. Fitur Utama
+🔍 Real-Time Risk Prediction: Form interaktif untuk memasukkan parameter operasional dan menghitung probabilitas delay dalam hitungan milidetik.
 
-## 🚀 4. Langkah-Langkah Menjalankan Proyek (Step-by-Step)
+🚦 Proactive Decision Engine: Aturan mitigasi bisnis dinamis berbasis threshold risiko (Risiko Tinggi >70%, Sedang 40-70%, Optimal <40%).
 
+📊 Dynamic Analytics Dashboard: Visualisasi distribusi historis dengan kemampuan filter interaktif (Mitra, Wilayah, Cuaca).
+
+⚡ Live-Feed Reactive Data Flow: Setiap transaksi baru yang dihitung di form prediksi akan otomatis masuk ke memori sesi (st.session_state) dan memperbarui KPI serta grafik analitik secara instan.
+
+🚀 4. Langkah-Langkah Menjalankan Proyek (Step-by-Step)
 Ikuti langkah-langkah berikut untuk meng-clone, menyiapkan environment, dan menjalankan aplikasi di komputer lokal Anda:
 
-### Langkah 1: Clone Repositori
+Langkah 1: Clone Repositori
 Buka terminal Anda dan jalankan perintah berikut:
 
-```bash
-git clone https://github.com/shalehh17/Sistem_Pendeteksi_dan_Prediksi_Risiko-.git
+Bash
+git clone [https://github.com/shalehh17/Sistem_Pendeteksi_dan_Prediksi_Risiko-.git](https://github.com/shalehh17/Sistem_Pendeteksi_dan_Prediksi_Risiko-.git)
 cd Sistem_Pendeteksi_dan_Prediksi_Risiko-
-```
-
-### Langkah 2: Buat Virtual Environment (Opsional tapi Disarankan)
-
-```bash
+Langkah 2: Buat Virtual Environment (Opsional tapi Disarankan)
+Bash
 # Untuk Windows (Command Prompt / PowerShell)
 python -m venv venv
 venv\Scripts\activate
@@ -108,68 +100,70 @@ venv\Scripts\activate
 # Untuk macOS / Linux
 python3 -m venv venv
 source venv/bin/activate
-```
-
-### Langkah 3: Install Dependensi
-
-```bash
+Langkah 3: Install Dependensi
+Bash
 pip install -r requirements.txt
-```
-
-### Langkah 4: Bangun Artefak Model (Jika Belum Tersedia)
+Langkah 4: Bangun Artefak Model (Jika Belum Tersedia)
 Jalankan modul preprocessing data dan training model secara modular:
 
-```bash
+Bash
 # 1. Bangun pipeline preprocessor
 python -m src.preprocessing
 
 # 2. Latih model Deep Learning
 python -m src.train
-```
-
-### Langkah 5: Jalankan Aplikasi Streamlit
-
-```bash
+Langkah 5: Jalankan Aplikasi Streamlit
+Bash
 python -m streamlit run app/main.py
-```
+Aplikasi web akan otomatis terbuka di browser Anda pada alamat: http://localhost:8501.
 
-Aplikasi web akan otomatis terbuka di browser Anda pada alamat: `http://localhost:8501`.
+📈 5. Panduan Penggunaan Aplikasi
+Menu: Real-time Prediction
+
+Masukkan informasi rute (Jarak, Berat Paket, Estimasi Jam).
+
+Tentukan mitra ekspedisi, wilayah operasional, kendaraan, serta kondisi cuaca rute.
+
+Klik "🚀 Eksekusi Analisis Risiko AI".
+
+Sistem akan menampilkan persentase risiko delay, progress bar, rekomendasi mitigasi bisnis, dan mencatat transaksi ke dasbor analitik secara live.
+
+Menu: Analytics Dashboard
+
+Lihat ringkasan KPI (Total Paket, Tingkat Keterlambatan, Rata-Rata Biaya, dll.).
+
+Gunakan Panel Filter Data Interaktif untuk membandingkan performa vendor logistik di berbagai kondisi rute.
+
+Pantau Live Feed Badge dan lihat transaksi pengujian terbaru pada tabel pratinjau data di baris paling bawah.
+
+🛠️ 6. Teknologi & Pustaka yang Digunakan
+Bahasa Pemrograman: Python 3.9+
+
+Antarmuka Web: Streamlit
+
+Machine Learning & Preprocessing: Scikit-Learn, Joblib
+
+Deep Learning Framework: TensorFlow / Keras
+
+Manipulasi & Analisis Data: Pandas, NumPy
+
+Version Control: Git & GitHub
+
+👨‍💻 Kontributor
+Pengembang: shalehh17
+
+Kontak / Email: shalehuddinzaki84@gmail.com
+
 
 ---
 
-## 📈 5. Panduan Penggunaan Aplikasi
+### 🚀 Langkah Terakhir (Push Pembaruan README ke GitHub):
+Setelah menyimpan file `README.md`, jalankan perintah ini di terminal VS Code Anda:
 
-1. **Menu: Real-time Prediction**
-   - Masukkan informasi rute (*Jarak, Berat Paket, Estimasi Jam*).
-   - Tentukan mitra ekspedisi, wilayah operasional, kendaraan, serta kondisi cuaca rute.
-   - Klik **"🚀 Eksekusi Analisis Risiko AI"**.
-   - Sistem akan menampilkan persentase risiko delay, progress bar, rekomendasi mitigasi bisnis, dan mencatat transaksi ke dasbor analitik secara *live*.
-
-2. **Menu: Analytics Dashboard**
-   - Lihat ringkasan KPI (*Total Paket, Tingkat Keterlambatan, Rata-Rata Biaya, dll.*).
-   - Gunakan **Panel Filter Data Interaktif** untuk membandingkan performa vendor logistik di berbagai kondisi rute.
-   - Pantau *Live Feed Badge* dan lihat transaksi pengujian terbaru pada tabel pratinjau data di baris paling bawah.
-
----
-
-## 🛠️ 6. Teknologi & Pustaka yang Digunakan
-
-- **Bahasa Pemrograman:** Python 3.9+
-- **Antarmuka Web:** Streamlit
-- **Machine Learning & Preprocessing:** Scikit-Learn, Joblib
-- **Deep Learning Framework:** TensorFlow / Keras
-- **Manipulasi & Analisis Data:** Pandas, NumPy
-- **Version Control:** Git & GitHub
-
----
-
-## 👨‍💻 Kontributor
-
-- **Pengembang:** [shalehh17](https://github.com/shalehh17)
-- **Kontak / Email:** `shalehuddinzaki84@gmail.com`
-
--```` ``` ```` 
-
+```cmd
+git add README.md
+git commit -m "Docs: Update comprehensive README documentation"
+git push origin main
 
 
 
